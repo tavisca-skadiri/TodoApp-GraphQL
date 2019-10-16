@@ -1,0 +1,15 @@
+schema{
+    query:Query
+}
+
+type Query{
+    allTodos:[Todo]
+    todo(id: Int): Todo
+}
+
+type Todo{
+    id:Int
+    todoname:String
+}
+
+
